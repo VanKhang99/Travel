@@ -1,0 +1,117 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #9a9a9a;
+    --border-color: #f1f1f1;
+    --common-color-header:  #ba71da;
+    --sub-title: #9a9a9a;
+    --main-title: #555555;
+    --destination-item-hover: #14b9d5;
+    --holiday-color: #f76570;
+    --intro-package-color: #14b9d5;
+    --price-color: #555555;
+    --footer-color: #14b9d5;
+
+    --header-top-height: 104px;
+    --total-header-height: 873px;
+    --menu-top-width: 350px;
+    --content-discover-height: 269px;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+ul {
+    padding-left: 0;
+    list-style-type: none;
+    margin: 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.padding-0-15 {
+    padding: 0 15px;
+}
+
+.button {
+    display: block;
+    text-align: center;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    color: var(--white-color);
+    padding: 10px 0;
+    border-radius: 50px;
+}
+
+/* COMMON-BLOCK OF HEADER-INNER */
+.keyword-block-addition {
+    display: inline-block;
+    margin-left: auto;
+    font-size: 1rem;
+    padding: 3px 5px;
+    color: var(--white-color);
+    letter-spacing: 2px;  
+    border-radius: 3px;
+    background-color: #f76570;
+}
+
+.sub-navigation__arrow {
+    display: inline-block;
+    width: 0;
+	height: 0;
+    margin: 1px 0 0 auto;
+	border-top: 5px solid transparent;
+	border-left: 5px solid 
+    #9a9a9a;
+	border-bottom: 5px solid transparent;
+}
+
+/* TITLE */
+.title__sub {
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: var(--sub-title);
+}
+
+.title__main {
+    margin: 15px 0 0;
+    font-size: 3.6rem;
+    color: var(--main-title);
+}
+
+.title__main--underline {
+    position: relative;
+}
+
+.title__main--underline::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 11px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    border-bottom: 5px solid #1bbc9b;
+}
+
+@keyframes appearSlowly {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+
+}
